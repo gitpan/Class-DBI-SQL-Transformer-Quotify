@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use base qw/Class::DBI::SQL::Transformer/;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub _expand_table {
 	my $self = shift;
@@ -109,7 +109,7 @@ Class::DBI::SQL::Transformer::Quotify - Quote column and table names in Class::D
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 SYNOPSIS
 
@@ -130,7 +130,7 @@ This is an attempt to solve the problem of spaces and/or reserved words in table
   FROM table name
   WHERE my id = ?
 
-This is implemented by subclassing L<Class::DBI::SQL::Transformer> and notifying L<Class::DBI> via it's C<sql_transformer_class()> attribute.  Note that some of the methods are completely replaced.
+This is implemented by subclassing L<Class::DBI::SQL::Transformer> and notifying L<Class::DBI> via its C<sql_transformer_class()> attribute.  Note that some of the methods are completely replaced.
 
 =head1 BACKGROUND/EVOLUTION
 

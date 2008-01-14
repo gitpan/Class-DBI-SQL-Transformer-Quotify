@@ -11,6 +11,7 @@ WriteMakefile(
     PREREQ_PM => {
         'Test::More' => 0,
 	'Class::DBI' => '3.0.8',
+	'DBD::Mock'  => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Class-DBI-SQL-Transformer-Quotify-*' },
